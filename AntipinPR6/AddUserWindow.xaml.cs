@@ -1,5 +1,4 @@
-﻿using Npgsql;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,16 +15,13 @@ using System.Windows.Shapes;
 namespace AntipinPR6
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для AddUserWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class AddUserWindow : Window
     {
-        public Window1()
+        public AddUserWindow()
         {
             InitializeComponent();
-           
-                
-            
         }
     }
 }

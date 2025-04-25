@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <ListBox  Margin="104,10,162,207"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="379*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listUserBox"  Margin="62,38,104,137" Grid.Column="1"/>
+        <Button x:Name="btnEditDate" Content="Изменить данные" HorizontalAlignment="Left" Margin="62,352,0,0" VerticalAlignment="Top" Height="40" Width="109" Grid.Column="1"/>
+        <Button x:Name="btnEditPassword" Content="Сменить пароль" HorizontalAlignment="Left" Margin="209,352,0,0" VerticalAlignment="Top" Height="44" Width="100" Grid.Column="1"/>
+        <Button x:Name="btnDeleteUser" Content="Уволить сотрудника" HorizontalAlignment="Left" Margin="358,352,0,0" VerticalAlignment="Top" Height="44" Width="121" Grid.Column="1"/>
+        <Button x:Name="btnAddUser" Content="Добавить сотрудника" HorizontalAlignment="Left" Margin="62,10,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblLoginUser" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="600,2,0,0" VerticalAlignment="Top" Width="148"/>
 
     </Grid>
 </Window>

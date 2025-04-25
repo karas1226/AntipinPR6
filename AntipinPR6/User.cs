@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace AntipinPR6
 {
-    internal class User
+    class User
     {
         int id { get; }
-        string login { get; set; }
+        string username { get; set; }
         string password { get; set; }
-        public User(int id, string login, string password)
+        public User(int id, string username, string pass)
         {
             this.id = id;
-            this.login = login;
-            this.password = password;
+            this.username = username;
+            this.password = pass;
         }
     }
+
 }
